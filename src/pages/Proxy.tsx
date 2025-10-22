@@ -1,26 +1,26 @@
 import Navigation from "@/components/Navigation";
+import { Button } from "@/components/ui/button";
 
 const Proxy = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background flex items-center justify-center">
       <Navigation />
       
-      <main className="container mx-auto px-4 pt-32 pb-16">
-        <div className="max-w-4xl mx-auto animate-fade-in">
-          <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            Proxy Services
-          </h1>
-          <p className="text-xl text-muted-foreground mb-12">
-            Access the web freely and securely with Everbound proxies.
-          </p>
-          
-          <div className="bg-card border border-border rounded-lg p-8 shadow-lg">
-            <p className="text-muted-foreground text-center py-12">
-              Content coming soon...
-            </p>
-          </div>
-        </div>
-      </main>
+      <div className="text-center animate-fade-in px-4">
+        <h1 className="text-5xl font-bold mb-12 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+          Get Wave
+        </h1>
+        
+        <Button variant="hero" size="lg" asChild>
+          <a 
+            href="https://getwave.gg/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            Visit Wave
+          </a>
+        </Button>
+      </div>
     </div>
   );
 };
